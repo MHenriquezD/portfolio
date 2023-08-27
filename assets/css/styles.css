@@ -365,8 +365,8 @@ a {
 #skills .skills-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 4fr;
+    grid-template-columns: 4fr;
     gap: 1rem;
 }
 
@@ -380,6 +380,77 @@ a {
     height: 1rem;
     border-radius: 3px;
     background: #dee2e6;
+}
+
+#modalWork .work-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+#modalWork .work-content div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.3rem;
+}
+
+#modalWork .work-content div img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#modalWork .work-content div img:hover {
+    -webkit-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
+    margin: 0.7rem;
+    opacity: 0.9;
+    -webkit-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+}
+
+#modalWork .work-content div div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0.3rem;
+}
+
+#modalWork .work-content div div h2 {
+    line-height: 1;
+}
+
+#modalWork .work-content div:hover img {
+    -webkit-transform: rotate(360deg) scale(1.01);
+    transform: rotate(360deg) scale(1.01);
+    margin: 0.7rem;
+    opacity: 0.9;
+    -webkit-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+}
+
+#skillIcons .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+#skillIcons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#skillIcons .row div img {
+    width: 150px;
 }
 
 #timeline {
@@ -567,7 +638,7 @@ a {
 
 @media (max-width: 1100px) {
     #home .showcase .showcase-content .home-title {
-        padding-left: 4rem;
+        padding-left: 6rem;
     }
 
     #about .about-content {
@@ -601,6 +672,22 @@ a {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    #skillIcons .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+    #skillIcons div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+    }
+    
+    #skillIcons .row div img {
+        width: 150px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -615,7 +702,7 @@ a {
 
 @media (max-width: 768px) {
     #home .showcase .showcase-content .home-title h1 {
-        font-size: 8rem;
+        font-size: 4rem;
     }
 
     #home .showcase .showcase-content .home-title p {
@@ -647,6 +734,18 @@ a {
     #about .about-content .about-text ul {
         font-size: 1.2rem;
     }
+    #skillIcons .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+
+    }
+    
+    #skillIcons .row div img {
+        width: 125px;
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -655,7 +754,7 @@ a {
     }
 
     #home .showcase .showcase-content .home-title h1 {
-        font-size: 6rem;
+        font-size: 3.5rem;
     }
 
     #home .showcase .showcase-content .home-title p {
@@ -751,65 +850,21 @@ a {
     #contact .contact-address div:first-child {
         border-bottom: 1px solid #f8f9fa;
     }
+    #skillIcons .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    
+    #skillIcons .row div img {
+        width: 80px;
+    }
 }
 
 
 /*
 Modal styles
 */
-
-#modalWork .work-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
-
-#modalWork .work-content div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.3rem;
-}
-
-#modalWork .work-content div img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-#modalWork .work-content div img:hover {
-    -webkit-transform: rotate(360deg) scale(1.1);
-    transform: rotate(360deg) scale(1.1);
-    margin: 0.7rem;
-    opacity: 0.9;
-    -webkit-transition: all 1.2s ease-in-out;
-    transition: all 1.2s ease-in-out;
-}
-
-#modalWork .work-content div div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    padding: 0.3rem;
-}
-
-#modalWork .work-content div div h2 {
-    line-height: 1;
-}
-
-#modalWork .work-content div:hover img {
-    -webkit-transform: rotate(360deg) scale(1.01);
-    transform: rotate(360deg) scale(1.01);
-    margin: 0.7rem;
-    opacity: 0.9;
-    -webkit-transition: all 1.2s ease-in-out;
-    transition: all 1.2s ease-in-out;
-}
 
 
 .openModal {
