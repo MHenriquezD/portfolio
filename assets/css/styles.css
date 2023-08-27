@@ -636,6 +636,11 @@ a {
     line-height: 3rem;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
 @media (max-width: 1100px) {
     #home .showcase .showcase-content .home-title {
         padding-left: 6rem;
