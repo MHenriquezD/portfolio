@@ -1,49 +1,61 @@
 export const habilidades = [
     {
+        "id": 1,
         "titulo": "HTML",
         "img": "img/html.png"
     },
     {
+        "id": 2,
         "titulo": "CSS",
         "img": "img/css.png"
     },
     {
+        "id": 3,
         "titulo": "JavaScript",
         "img": "img/javascript.png"
     },
     {
+        "id": 4,
         "titulo": "JQuery",
         "img": "img/jquery.png"
     },
     {
+        "id": 5,
         "titulo": "NodeJS",
         "img": "img/node.png"
     },
     {
+        "id": 6,
         "titulo": "typescript",
         "img": "img/typescript.svg"
     },
     {
+        "id": 7,
         "titulo": "Express",
         "img": "img/expressjs.jpg"
     },
     {
+        "id": 8,
         "titulo": "PHP",
         "img": "img/php.png"
     },
     {
+        "id": 9,
         "titulo": "PostgreSQL",
         "img": "img/postgre.png"
     },
     {
+        "id": 10,
         "titulo": "MySQL",
         "img": "img/mysql.png"
     },
     {
+        "id": 11,
         "titulo": "SQLite",
         "img": "img/sqlite.png"
     },
     {
+        "id": 12,
         "titulo": "MongoDB",
         "img": "img/mongo.png"
     },
@@ -60,7 +72,7 @@ export const experiencia = [
         "id": 1,
         "titulo": "Web Developer",
         "periodo": "2021 - 2022",
-        "descripcion": "Desarrollador WEB en la empresa CCS Consultores (Honduras), ustilizando CSS, HTML, JavaScrip y PHP."
+        "descripcion": "Desarrollador WEB en la empresa CCS Consultores (Honduras).<br>Utilizando CSS, HTML, JavaScrip y PHP."
     },
     {
         "id": 2,

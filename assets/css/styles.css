@@ -447,6 +447,11 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    transition:all 1s;
+}
+#iconsImg div:hover{
+    transform: scale(1.2);
+    transition:all 1s;
 }
 
 #skillIcons .row div img {

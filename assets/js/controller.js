@@ -7,7 +7,7 @@ const cargarHabilidades = () => {
     $("#iconsImg").empty();
     habilidades.forEach((habilidad) => {
         $("#iconsImg").append(`
-            <div>
+            <div id="icon-${habilidad.id}">
                 <img src="./assets/${habilidad.img}"> 
                 <span>${habilidad.titulo}</span>
             </div>
