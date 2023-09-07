@@ -1,3 +1,38 @@
+import { habilidades, experiencia } from "../../data/data.js";
+
+console.log(habilidades);
+
+const cargarHabilidades = () => {
+    const habilidadesContainer = document.querySelector(".habilidades-container");
+    $("#iconsImg").empty();
+    habilidades.forEach((habilidad) => {
+        $("#iconsImg").append(`
+            <div>
+                <img src="./assets/${habilidad.img}"> 
+                <span>${habilidad.titulo}</span>
+            </div>
+        `);
+    });
+};
+cargarHabilidades();
+
+const cargarExperiencias = () => {
+    $("#experience").empty();
+    experiencia.forEach((experiencia) => {
+        $("#experience").append(`
+            <li id="exp-${experiencia.id}">
+                <div>
+                    <h3>${experiencia.periodo}</h3>
+                    <h2>${experiencia.titulo}</h2>
+                    <p>${experiencia.descripcion}</p>
+                </div>
+            </li>
+        `);
+    });
+}
+cargarExperiencias();
+
+
 const items = document.querySelectorAll(".timeline-content li");
 
 const isInViewport = (el) => {
