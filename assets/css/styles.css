@@ -249,7 +249,7 @@ a {
 #home .showcase {
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.7))), url("../images/background.webp");
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.7))), url("../img/bg-portfolio.jpg");
     /* background: linear-gradient(black, rgba(0, 0, 0, 0.7)), url("https://i.postimg.cc/TwKPFtft/background.png"); */
     background: linear-gradient(black, rgba(0, 0, 0, 0.7)), url("https://i.postimg.cc/rm6xNdZQ/bg-portfolio.jpg");
     background-position: center;
