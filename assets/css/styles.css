@@ -489,10 +489,15 @@ a {
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
+/* Color para dark-theme */
+.dark-theme #about .about-text {
+    background: #005874;
+    color: #f8f9fa;
+}
 
 #skills {
-  background: #005874;
-  color: #f8f9fa;
+  background: #f8f9fa;
+  color: #212529;
 }
 
 .dark-theme #skills {
