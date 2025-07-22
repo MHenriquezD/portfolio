@@ -58,13 +58,13 @@ body.dark-theme {
     opacity: 1;
 }
 .dark-theme .theme-toggle-button {
-  background: #212529;
+  background: #005874;
   color: #f8f9fa;
   box-shadow: 0 2px 8px rgba(0,0,0,0.30);
 }
 .dark-theme .theme-toggle-button:hover {
   background: #f8f9fa;
-  color: #212529;
+  color: #005874;
 }
 
 .light-theme .theme-toggle-button {
@@ -96,8 +96,8 @@ body.dark-theme {
 /* Theme Toggle Button Styles */
 .theme-toggle-button {
   position: fixed;
-  top: 20px;
-  right: 24px;
+  top: 10px;
+  right: 30px;
   background: #fff;
   color: #212529;
   border: none;
@@ -1026,4 +1026,37 @@ Modal styles
 
 .openModal {
     cursor: pointer;
+}
+
+/* Ocultar barra de desplazamiento */
+/* Scrollbar color igual al fondo en ambos temas */
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #f8f9fa;
+}
+body::-webkit-scrollbar-thumb {
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+.dark-theme body::-webkit-scrollbar {
+  background: #005874;
+}
+.dark-theme body::-webkit-scrollbar-thumb {
+  background: #005874;
+}
+body {
+  -ms-overflow-style: auto; /* IE y Edge */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #f8f9fa #f8f9fa;
+}
+.dark-theme body {
+  scrollbar-color: #005874 #005874;
+}
+
+/* Contact icons color by theme */
+.dark-theme #contact i {
+    color: #fff !important;
+}
+.light-theme #contact i {
+    color: #212529 !important;
 }

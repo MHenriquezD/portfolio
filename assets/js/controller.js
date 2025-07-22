@@ -3,7 +3,48 @@ import {
   experiencia,
   proyectos,
   rapidRidersProyectos,
+  contacto,
 } from '../../data/data.js';
+// Renderizar contactos dinámicamente
+const renderizarContactos = () => {
+  const contactIcons = document.getElementById('contactIcons');
+  const contactAddress = document.getElementById('contactAddress');
+  if (contactIcons) contactIcons.innerHTML = '';
+  if (contactAddress) contactAddress.innerHTML = '';
+
+  contacto.forEach((item) => {
+    if (item.tipo === 'facebook' || item.tipo === 'linkedin' || item.tipo === 'github') {
+      // Íconos sociales
+      if (contactIcons) {
+        const div = document.createElement('div');
+        div.className = 'text-center';
+        div.innerHTML = `
+          <a href="${item.url}" target="_blank">
+            <i class="${item.icon} fa-4x"></i>
+          </a>
+        `;
+        contactIcons.appendChild(div);
+      }
+    } else {
+      // Email y teléfono
+      if (contactAddress) {
+        const div = document.createElement('div');
+        div.className = 'text-center py-2';
+        div.innerHTML = `
+          <a href="${item.url}">
+            <i class="${item.icon} fa-3x my-1"></i><br>${item.texto}
+          </a>
+        `;
+        contactAddress.appendChild(div);
+      }
+    }
+  });
+};
+
+// Ejecutar al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+  renderizarContactos();
+});
 
 const preloadImage = (url) => {
   const img = new Image();

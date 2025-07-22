@@ -1,3 +1,36 @@
+// Datos de contacto para renderizado dinámico
+export const contacto = [
+  {
+    tipo: 'facebook',
+    url: 'https://www.facebook.com/ManuelD.Jesus8/',
+    icon: 'fab fa-facebook',
+    texto: null,
+  },
+  {
+    tipo: 'linkedin',
+    url: 'https://www.linkedin.com/in/manuel-henriquez-a8541423a/',
+    icon: 'fab fa-linkedin',
+    texto: null,
+  },
+  {
+    tipo: 'github',
+    url: 'https://github.com/ManuelDHenriquez',
+    icon: 'fab fa-github-square',
+    texto: null,
+  },
+  {
+    tipo: 'email',
+    url: 'mailto:mdhenriquez16@gmail.com',
+    icon: 'fas fa-envelope',
+    texto: 'mdhenriquez16@gmail.com',
+  },
+  {
+    tipo: 'telefono',
+    url: 'tel:+50492370288',
+    icon: 'fas fa-phone',
+    texto: '+504 9237-0288',
+  },
+];
 export const habilidades = [
   {
     id: 1,
