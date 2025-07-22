@@ -1,3 +1,128 @@
+/* ...existing code... */
+/* Theme Color Classes */
+body.light-theme {
+  background: #f8f9fa;
+  color: #212529;
+}
+body.dark-theme {
+  background: #212529;
+  color: #f8f9fa;
+}
+
+.dark-theme .modal-content {
+
+.dark-theme #modalRapidRiders i,
+.dark-theme #modalRapidRiders a {
+    color: #fff !important;
+}
+
+.dark-theme #modalWork i,
+.dark-theme #modalWork a {
+    color: #fff !important;
+}
+
+    background-color: #005874 !important;
+    color: #fff !important;
+    border: none;
+}
+.dark-theme .modal-header,
+.dark-theme .modal-footer {
+    background-color: #00445a !important;
+    color: #fff !important;
+    border: none;
+}
+.dark-theme .modal-title {
+    color: #fff !important;
+}
+.dark-theme .close {
+    color: #fff !important;
+    opacity: 1;
+}
+
+.light-theme .modal-content {
+    background-color: #fff !important;
+    color: #222 !important;
+    border: none;
+}
+.light-theme .modal-header,
+.light-theme .modal-footer {
+    background-color: #e9ecef !important;
+    color: #222 !important;
+    border: none;
+}
+.light-theme .modal-title {
+    color: #222 !important;
+}
+.light-theme .close {
+    color: #222 !important;
+    opacity: 1;
+}
+.dark-theme .theme-toggle-button {
+  background: #212529;
+  color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.30);
+}
+.dark-theme .theme-toggle-button:hover {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+.light-theme .theme-toggle-button {
+  background: #fff;
+  color: #212529;
+}
+.light-theme .theme-toggle-button:hover {
+  background: #212529;
+  color: #fff;
+}
+
+/* Ejemplo de cambio de fondo en secciones */
+.dark-theme #about,
+.dark-theme #skills,
+.dark-theme #timeline,
+.dark-theme #work,
+.dark-theme #contact,
+.dark-theme #footer {
+  background: #005874;
+  color: #f8f9fa;
+}
+.dark-theme .bottom-line {
+  background: #f8f9fa;
+}
+.light-theme .bottom-line {
+  background: #212529;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background: #fff;
+  color: #212529;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+.theme-toggle-button:focus {
+  outline: none;
+}
+.theme-toggle-button:hover {
+  background: #212529;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.theme-toggle-button i {
+  font-size: 1.5rem;
+}
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +147,20 @@ body {
     text-align: center;
 }
 
+/* Regla global para enlaces */
 a {
     text-decoration: none;
     color: #212529;
 }
+
+/* Especificidad para enlaces en el modal según tema */
+.dark-theme  a {
+    color: #fff !important;
+}
+.light-theme a {
+    color: #212529 !important;
+}
+
 
 .lead {
     font-size: 1.5rem;
@@ -356,7 +491,13 @@ a {
 }
 
 #skills {
-    background: #f8f9fa;
+  background: #005874;
+  color: #f8f9fa;
+}
+
+.dark-theme #skills {
+  background: #005874;
+  color: #f8f9fa;
 }
 
 #skills .skills-title {

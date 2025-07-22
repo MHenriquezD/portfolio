@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/button.styles.css"> -->
 </head>
 
 <body>
@@ -34,6 +35,7 @@
                 </div>
             </div>
         </div>
+        <button id="themeToggleButton" class="theme-toggle-button"> <i class="fa fa-sun"></i></button>
     </div>
     <!-- Home -->
     <section id="home">
@@ -61,7 +63,7 @@
                     <p class="lead">La tecnología y su avance siempre me ha fascinado. Siempre me ha encantado leer,
                         aprender y sobre todo explorar más al respecto. Sin embargo, en esta enorme extensión de
                         "tecnología", mi
-                        favorito siempre ha sido el "Desarrollo WEB". He estado aprendiendo WEB Desing durante los
+                        favorito siempre ha sido el "Desarrollo WEB". He estado aprendiendo Web Design durante los
                         últimos 2 años y también he realizado proyectos de aplicaciones web. A través de todas estas
                         experiencias, tengo:</p>
                     <ul class="py-2">
@@ -92,9 +94,8 @@
         <div class="container">
             <h2 class="timeline-title text-center pt-4">Timeline</h2>
             <div class="bottom-line"></div>
-            <p class="text-center lead pt-1">A lo largo de los años, he logrado ciertos logros y aprender algunas
-                habilidades
-                claramente, siempre dispuesto a apender mucho mas!.</p>
+            <p class="text-center lead pt-1">A lo largo de los años, he alcanzado ciertos logros y aprendido algunas
+                habilidades. Siempre dispuesto a aprender mucho más.</p>
             <div class="timeline-content py-3">
                 <ul id="experience">
                 </ul>
@@ -109,57 +110,7 @@
             <p class="text-center lead pt-1">Estos son los proyectos en los que he trabajado, los cuales me han generado
                 la experiencia que he logrado!</p>
             <div class="work-content py-3">
-                <div>
-                    <a href="https://github.com/ManuelDHenriquez/Restaurante" target="_blank">
-                        <img src="https://i.postimg.cc/2SCV8xyZ/logo.jpg" alt="POS Restaurantes">
-                    </a>
-                    <div>
-                        <a href="https://github.com/ManuelDHenriquez/Restaurante" target="_blank">
-                            <h2>POS para Restaurantes</h2>
-                        </a>
-                        <p>Punto de ventas para restaurantes, construido a base de JS, PHP y MySQl, con otras tenologías
-                            como HTML, CSS, Jquery, Bootstrap, etc.
-                            Este fue diseñado para dar comodidad a los clientes y a los empleados de los restaurantes.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <a href="https://atki.online/" target="_blank">
-                        <img src="https://atki.online/images/2023/05/10/atkisoftwaremascota.png" alt="POS Restaurantes">
-                    </a>
-                    <div>
-                        <a href="https://atki.online/" target="_blank">
-                            <h2>ATKi Software</h2>
-                        </a>
-                        <p>
-                            ATKi Software es un sistema diseñado para administrar las operaciones diarias de tu empresa
-                            en tiempo real de forma eficiente, segura y muy sencilla, si eres una micro, pequeña o
-                            mediana empresa, has llegado al lugar correcto aquí tenemos una solución para tu negocio.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <a class="openModal">
-                        <img src="https://i.postimg.cc/LsgBFZTw/rapid-riders-admins.png" alt="RapidRiders Admon">
-                    </a>
-                    <div>
-                        <a class="openModal">
-                            <h2>RapidRiders</h2>
-                        </a>
-                        <p>Proyecto Universitario en el cual tuve que desarrollar back-end y fron-end, este fue
-                            desarrollado para monitorear motoristas, clientes y administradores, fueron creadas todas
-                            las instancias desde cero, así como las rutas y los endpoits. <br>
-                            Creado con NodeJS, JavaScript, TypeScript, Express, MongoDB, Bootstrap.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://i.postimg.cc/wM3C9MRP/ffaa.png" alt="Salon Azul">
-                    <div>
-                        <h2>Salón Azul FFAA</h2>
-                        <p>Apoyo brindado en el salón azul computacional (Desarrollo) de la Fuerza Aerea Hondureña</p>
-                    </div>
-                </div>
+                <!-- Los proyectos se renderizan dinámicamente desde controller.js -->
             </div>
         </div>
     </section>
@@ -167,8 +118,8 @@
         <div class="container">
             <h2 class="contact-title text-center pt-4">Contacto</h2>
             <div class="bottom-line"></div>
-            <p class="text-center lead pt-1">Mí información de contacto es la siguiente
-                pueden encnotrarme de las siguientes formas!</p>
+            <p class="text-center lead pt-1">Mi información de contacto es la siguiente.
+                Pueden encontrarme de las siguientes formas.</p>
             <div class="contact-content py-3">
                 <div class="text-center">
                     <a href="https://www.facebook.com/ManuelD.Jesus8/" target="_blank">
@@ -215,61 +166,8 @@
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
-                <div class="modal-body work-content">
-                    <div>
-                        <a href="https://github.com/ManuelDHenriquez/RapidRiders-Admins" target="_blank">
-                            <img src="https://i.postimg.cc/LsgBFZTw/rapid-riders-admins.png" alt="Administradores">
-                        </a>
-                        <div>
-                            <a href="https://github.com/ManuelDHenriquez/RapidRiders-Admins" target="_blank">
-                                <h3>RapidRiders Admins</h3>
-                            </a>
-                            <p>Front-end del proyecto RapidRiders, Este está diseñado para que los Administradores
-                                desempeñen su papel sin problema alguno.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://github.com/ManuelDHenriquez/RapidRiders-Clientes" target="_blank">
-                            <img src="https://i.postimg.cc/LsgBFZTw/rapid-riders-admins.png" alt="Administradores">
-                        </a>
-                        <div>
-                            <a href="https://github.com/ManuelDHenriquez/RapidRiders-Clientes" target="_blank">
-                                <h3>RapidRiders Clientes</h3>
-                            </a>
-                            <p>Front-end del proyecto RapidRiders, Este está diseñado para que los Clientes puedan hacer
-                                sus ordenes sin inconvenientes.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://github.com/ManuelDHenriquez/RapidRiders-Motorista" target="_blank">
-                            <img src="https://i.postimg.cc/LsgBFZTw/rapid-riders-admins.png" alt="Administradores">
-                        </a>
-                        <div>
-                            <a href="https://github.com/ManuelDHenriquez/RapidRiders-Motorista" target="_blank">
-                                <h3>RapidRiders Motoristas</h3>
-                            </a>
-                            <p>Front-end del proyecto RapidRiders, Este está diseñado los Motoristas, para que puedan
-                                ver sus ordenes y entregarlas sin inconvenientes.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://github.com/ManuelDHenriquez/RapidRiders-Backend" target="_blank">
-                            <img src="https://i.postimg.cc/LsgBFZTw/rapid-riders-admins.png" alt="Administradores">
-                        </a>
-                        <div>
-                            <a href="https://github.com/ManuelDHenriquez/RapidRiders-Backend" target="_blank">
-                                <h3>RapidRiders Back-End (server)</h3>
-                            </a>
-                            <p>Back-end del proyecto RapidRiders, en este se encuentra todo el cuerpo central de la
-                                aplicación ya que estan las rutas, conexiones, esquemas, modelos, end-points, etc.
-                                Este fue diseñado para contribuir con el funcionamiento de la aplicación y que se lo más
-                                eficiente posible.
-                            </p>
-                        </div>
-                    </div>
+                <div class="modal-body work-content" id="modalRapidRiders">
+                    <!-- Aquí se cargará el contenido del proyecto dinámicamente -->
                 </div>
             </div>
         </div>
@@ -284,5 +182,6 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <script type="module" src="./assets/js/controller.js"></script>
+<script type="module" src="./assets/js/theme.switcher.js"></script>
 
 </html>
